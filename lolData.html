@@ -1,17 +1,28 @@
 <html>
-<header>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="lolData.js"></script>
 
 <title>Test riot API</title>
-</header>
+</head>
 <body>
 <input type="text" id="name" placeholder="Summoner's name" />
-<button id="search" onclick="getName()">Rechercher</button>
-<div id="test"></div>
-<div id="infoRanked"></div>
+<button id="search" onclick="getInfos()">Rechercher</button>
+<table>
+    <tr>
+        <td>
+            <ul class="list-group">
+            <div id="test"></div>
+            <div id="infoRanked"></div>
+            </ul>
+        </td>
+    </tr>
+</table>
+<button id="searchLiveGame" onclick="getLiveGame()">Live Game</button>
+<div id="liveGame"></div>
 </body>
 
 </html>
